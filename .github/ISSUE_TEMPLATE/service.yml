@@ -1,0 +1,57 @@
+name: Добавить или обновить подключение
+description: Предложите сервис или исправьте запись с опорой на документацию.
+title: "[Каталог] "
+body:
+  - type: input
+    id: service
+    attributes:
+      label: Сервис и ID записи
+      description: Укажите название. Для существующей записи добавьте ID, например if-061.
+    validations:
+      required: true
+  - type: dropdown
+    id: protocol
+    attributes:
+      label: Протокол
+      options:
+        - API
+        - MCP
+        - A2A
+    validations:
+      required: true
+  - type: textarea
+    id: capabilities
+    attributes:
+      label: Что умеет подключение
+      description: Опишите подтверждённые операции и изменения относительно текущей записи.
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: Первичные источники и дата проверки
+      description: Ссылки на документацию владельца сервиса или репозиторий автора коннектора. Укажите дату изучения.
+    validations:
+      required: true
+  - type: textarea
+    id: access
+    attributes:
+      label: Условия доступа и ограничения
+      description: Кому доступно подключение, кто автор, нужны ли договор, платный план, API-ключ или OAuth. Если условие неизвестно, укажите это явно.
+    validations:
+      required: true
+  - type: dropdown
+    id: evidence
+    attributes:
+      label: Как проверены возможности
+      options:
+        - Изучена документация
+        - Проверено подключение
+        - Проверено конкретное действие
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Дополнительные детали
+      description: Для живого теста опишите выполненную операцию и результат. Приложите обезличенный пример, если он поможет воспроизвести проверку.

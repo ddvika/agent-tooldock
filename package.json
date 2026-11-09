@@ -1,0 +1,52 @@
+{
+  "name": "agent-tooldock",
+  "version": "0.1.0",
+  "description": "Discover 312 documented API, MCP and A2A connections to Russian services. Local MCP search and CLI with access conditions and sources.",
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ddvika/agent-tooldock.git"
+  },
+  "homepage": "https://github.com/ddvika/agent-tooldock#readme",
+  "bugs": "https://github.com/ddvika/agent-tooldock/issues",
+  "keywords": [
+    "mcp",
+    "mcp-server",
+    "model-context-protocol",
+    "ai-agents",
+    "tool-discovery",
+    "api-directory",
+    "api-catalog",
+    "a2a",
+    "russian-services",
+    "integrations"
+  ],
+  "bin": {
+    "agent-tooldock": "src/cli.mjs",
+    "agent-tooldock-mcp": "src/stdio.mjs",
+    "agent-atlas": "src/cli.mjs",
+    "agent-atlas-mcp": "src/stdio.mjs"
+  },
+  "files": [
+    "src/",
+    "data/",
+    "scripts/",
+    "test/",
+    "docs/",
+    "README.md",
+    "README.en.md",
+    "LICENSE",
+    "DATA-LICENSE.md",
+    "CONTRIBUTING.md"
+  ],
+  "scripts": {
+    "test": "node --test test/*.test.mjs",
+    "start": "node src/stdio.mjs",
+    "demo": "node scripts/demo.mjs",
+    "export": "node scripts/export-catalog.mjs"
+  }
+}
