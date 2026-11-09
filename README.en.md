@@ -1,16 +1,18 @@
-![Agent ToolDock — a registry of APIs, MCP servers and A2A connections to Russian services](docs/assets/social-preview.jpg)
+![Agent ToolDock — an MCP server with a registry of Russian service APIs, MCP servers and A2A connections](docs/assets/social-preview.jpg)
 
 # Agent ToolDock
 
-**Find a Russian service for your AI agent's task.**
+**An MCP server with a registry of Russian service APIs, MCP servers and A2A connections.**
+
+Descriptions of **312 connections to 232 services** are collected in one place, based on public documentation: what each connection can do, how to get access, what its limitations are and where to find the original sources.
+
+Connect ToolDock to your AI agent so it can find suitable services for a task and compare options. Access to the selected service is configured separately.
+
+**214 APIs · 97 MCP entries · 1 A2A entry**
+
+Search runs locally, with no API keys required. The registry is also available through a CLI, JSON and CSV.
 
 [Русский](README.md) · [Usage guide](docs/USAGE.md) · [JSON dataset](data/catalog.json) · [CSV dataset](data/catalog.csv) · [Contribute a service](CONTRIBUTING.md)
-
-**312 connections · 232 services · 214 APIs · 97 MCP entries · 1 A2A entry**
-
-Your agent needs to prepare a grocery cart, control a smart home or set up an automation. First, it needs to find a suitable service, understand its capabilities and work out how to get access.
-
-Agent ToolDock brings that information into one searchable registry. Connect the local MCP server so your agent can discover connections, inspect full records and choose an option for the task. Each record includes capabilities, access requirements, limitations and primary documentation links. The same dataset is available through a CLI, JSON and CSV.
 
 ## From a task to a suitable service
 
